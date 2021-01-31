@@ -19,6 +19,7 @@ class CartItem(models.Model):
     quantity = models.PositiveIntegerField()
     price = models.DecimalField(max_digits=13, decimal_places=2)
 
+
 class CartSerializer(ModelSerializer):
     total_cost = serializers.SerializerMethodField()
 
